@@ -1,0 +1,7 @@
+# hello-node/Dockerfile
+FROM node:18-alpine
+WORKDIR /usr/src/app
+COPY server.js .
+EXPOSE 8080
+CMD ["node", "server.js"]
+
